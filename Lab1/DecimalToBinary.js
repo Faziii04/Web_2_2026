@@ -7,5 +7,5 @@ const decimalToBinaryArrow = (num) => {
 }
 
 const number = 10;
-console.log(decimalToBinary(number));
-console.log(decimalToBinaryArrow(number));
+console.log("normal: " + decimalToBinary(number));
+console.log("flecha: " + decimalToBinaryArrow(number));

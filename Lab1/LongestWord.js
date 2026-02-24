@@ -15,4 +15,5 @@ const longestWordFunc = (phrase) => {
     return longestWord
 }
 
-console.log(longestWordFunc(phrase))
+console.log("normal: " + longestWordFunc(phrase))
+console.log("flecha: " + longestWordFunc(phrase))

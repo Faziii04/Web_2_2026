@@ -27,7 +27,7 @@ function generateRandomArray(size) {
 const generateRandomArrayArrow = (size) => {
     const arr = [];
     for (let i = 0; i < size; i++) {
-        arr.push(getRandomInt(1, 100));
+        arr.push(getRandomIntArrow(1, 100));
     }
     return arr;
 }
@@ -76,6 +76,9 @@ const printArrArrow = (arr) => {
     }
 }
 
-const arr = generateRandomArray(50);
+const arrNormla = generateRandomArray(50); 
+const arr=Flecha = generateRandomArrayArrow(50);
 printArr(arr);
+printArrArrow(arr);
 printOddsAndEvens(arr);
+printOddsAndEvensArrow(arr);
