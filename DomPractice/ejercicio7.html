@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTRIBUTE CHANGE WITH SET ATTRIBUTE</title>
+</head>
+<body>
+    <div id="elemento">ATRIBUTO </div>
+    <button onclick="buttom_click()">El boton</button>
+    <script>
+        const element = document.getElementById('elemento');
+        element.setAttribute('id', 'nuevo-id');
+        const buttom_click = () => {
+            alert("Hola")
+        }
+    </script>
+</body>
+</html>

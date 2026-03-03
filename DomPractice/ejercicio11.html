@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELETE CHILD EXERCISE</title>
+</head>
+<body>
+    <button id="boton" onclick="agregarElemento()">Boton para agregar</button>
+    <button id="butomRmv" onclick="eliminarElemnto()">Boton para eliminar</button>
+    <input type="text" id="inputId">
+    <div id="contenedor">CONTENEDOR PRINCIPAL</div>
+
+    <script>
+        const agregarElemento = () => {
+            const newElement = document.createElement("div");
+            const inputTag = document.getElementById("inputId");
+            newElement.className = "containerChild"
+            newElement.innerText = inputTag.value;
+            const container = document.getElementById("contenedor");
+            container.appendChild(newElement);
+            inputTag.value = "";
+        }
+        
+        const eliminarElemnto = () => {
+            const inputTag = document.getElementById("inputId");
+            const container = document.getElementById("contenedor");
+            const elements = document.querySelectorAll(".containerChild");
+            let found = false;
+            for (const element of elements) {
+                if (element.innerText == inputTag.value) {
+                    container.removeChild(element);
+                    found = true
+                }
+            }
+
+            found == true? alert("Elemento/s: " + inputTag.value + " eliminado/s") : alert("No se se encontro el elemento "+inputTag.value);
+            inputTag.value = "";
+        }
+    </script>
+</body>
+</html>

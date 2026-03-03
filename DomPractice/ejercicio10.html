@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPEND CHILD EXERCISE</title>
+</head>
+<body>
+    <button id="boton" onclick="agregarElemento()">Boton para agregar</button>
+    <input type="text" id="inputId">
+    <div id="contenedor">CONTENEDOR PRINCIPAL</div>
+
+    <script>
+        const agregarElemento = () => {
+            const newElement = document.createElement("div");
+            const inputTag = document.getElementById("inputId");
+            newElement.innerText = inputTag.value;
+            const container = document.getElementById("contenedor");
+            container.appendChild(newElement);
+        }
+    </script>
+</body>
+</html>

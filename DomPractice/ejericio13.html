@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELETE CHILD EXERCISE</title>
+</head>
+<body>
+    <button id="boton" onclick="agregarElemento()">Boton para agregar</button>
+    <button id="butomRmv" onclick="eliminarElemnto()">Boton para eliminar</button>
+    <input type="text" id="inputId">
+    <div id="contenedor">CONTENEDOR PRINCIPAL</div>
+
+    <script>
+        const agregarElemento = () => {
+            const newElement = document.createElement("div");
+            const inputTag = document.getElementById("inputId");
+            newElement.className = "containerChild"
+            newElement.innerText = inputTag.value;
+            const container = document.getElementById("contenedor");
+            container.appendChild(newElement);
+            inputTag.value = "";
+        }
+        
+        const eliminarElemnto = () => {
+            const inputTag = document.getElementById("inputId");
+            const container = document.getElementById("contenedor");
+            const elements = document.querySelectorAll(".containerChild");
+            for (const element of elements) {
+                if (element.innerText == inputTag.value) {
+                    container.removeChild(element);
+                    alert("Elemento: " + element.innerText + " eliminado");
+                    return;
+                }
+            }
+            alert("No se encontro el elemento");
+
+        }
+    </script>
+</body>
+</html>
+
+// this file is just a copy of ejercicio11 since im already using buttoms and events there.
