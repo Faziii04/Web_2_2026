@@ -1,0 +1,6 @@
+https://github.com/Faziii04/Web_2_2026/tree/main/Portfolio
+
+
+esp 8266
+
+now based on all the funcions in userservices i want you to generate the xaml for the dashboard window and the usercontrols in the usercontorl folder in this project.. also remember to apply the themes using dynamic resources as you did in the mainwindow.. i wanna display all the users in a datagrid in the user usercontrol.. and i wanna delete them by clikcing mouse right buttom and then an option to delete.. and for the creation i want a button that will  take us to another window that is named UserModification as far as i remember, for modification i want the same as with delete but instead of deleting the item instantly we will open the same window used for creation with different names for the buttoms since this will be modification and not creation and  this willl handled using the window constructor param that is a bool.. 
