@@ -1,6 +1,4 @@
-import { createCheckBox } from "./components/checkBox.js";
 import { createDeleteButton } from "./components/deleteButtom.js";
-import { createSpanElement } from "./components/spanElement.js";
 import { createDivElement } from "./components/divElement.js";
 
 const addElement = (event) => {
@@ -10,7 +8,7 @@ const addElement = (event) => {
         alert("El campo no puede estar vacio");
         return;
     }
-    
+
     const list = document.querySelector('.cardsList'); //creates the container
     const newListElement = document.createElement("li"); //creates new li (list element )
     newListElement.className = "card";
