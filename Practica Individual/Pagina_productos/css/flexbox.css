@@ -1,0 +1,241 @@
+.headerPrincipal > .container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 15px;
+}
+
+.headerPrincipal-nav {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+}
+
+.headerPrincipal-nav-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+}
+
+.contenidoPrincipal-productos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 12px;
+	align-items: stretch;
+}
+
+.contenidoPrincipal-produtos-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.contenidoPrincipal-produtos-link a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.videoSobre .container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+
+.videoSobre-sobre {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.rodapePrincipal-patrocinadores .container {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	align-items: stretch;
+}
+
+.rodapePrincipal-patrocinadores-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	align-items: center;
+}
+
+.rodapePrincipal-patrocinadores-list li {
+	flex: 0 1 auto;
+}
+
+.rodapePrincipal-navMap-list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 15px 20px;
+	max-height: 300px;
+}
+
+.rodapePrincipal-contatoForm {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	align-items: stretch;
+}
+
+.rodapePrincipal-contatoForm-emailInput,
+.rodapePrincipal-contatoForm-submit {
+	flex: 1;
+}
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+
+.gap-1 { gap: 8px; }
+.gap-2 { gap: 16px; }
+.gap-3 { gap: 24px; }
+
+@media (max-width: 767px) {
+	.rodapePrincipal-patrocinadores .container {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.rodapePrincipal-patrocinadores-list {
+		flex: 1 1 100%;
+	}
+
+	.rodapePrincipal-contatoForm-fieldset {
+		flex-direction: column;
+	}
+
+	.rodapePrincipal-contatoForm-emailInput,
+	.rodapePrincipal-contatoForm-submit {
+		width: 100%;
+	}
+
+	.rodapePrincipal-contatoForm {
+		width: 100%;
+	}
+}
+
+@media (min-width: 480px) {
+	.contenidoPrincipal-produtos-link {
+		flex: 1 1 calc(33.333% - 8px);
+		min-width: 100px;
+	}
+}
+
+@media (min-width: 768px) {
+	.headerPrincipal > .container {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.headerPrincipal-nav {
+		flex-direction: row;
+		width: auto;
+		gap: 10px;
+		justify-content: flex-end;
+	}
+
+	.headerPrincipal-nav-link {
+		flex: 0 0 auto;
+	}
+
+	.contenidoPrincipal-produtos-link {
+		flex: 1 1 calc(25% - 9px);
+		min-width: 110px;
+	}
+
+	.videoSobre .container {
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 35px;
+	}
+
+	.videoSobre-video {
+		flex: 1 1 55%;
+		min-width: 280px;
+	}
+
+	.videoSobre-sobre {
+		flex: 1 1 45%;
+		justify-content: flex-start;
+	}
+
+	.rodapePrincipal-patrocinadores .container {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.rodapePrincipal-patrocinadores-list {
+		justify-content: flex-start;
+		flex: 1;
+	}
+
+	.rodapePrincipal-contatoForm {
+		flex: 0 1 350px;
+	}
+
+	.rodapePrincipal-contatoForm-fieldset {
+		flex-direction: row;
+		gap: 8px;
+	}
+
+	.rodapePrincipal-contatoForm-emailInput {
+		flex: 1;
+	}
+
+	.rodapePrincipal-contatoForm-submit {
+		flex: 0 0 auto;
+		white-space: nowrap;
+	}
+
+	.rodapePrincipal-navMap-list {
+		flex-direction: row;
+		max-height: none;
+		gap: 35px 50px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.contenidoPrincipal-produtos-link {
+		flex: 1 1 calc(20% - 9.6px);
+		min-width: 120px;
+	}
+
+	.videoSobre .container {
+		gap: 45px;
+	}
+
+	.rodapePrincipal-navMap-list {
+		gap: 50px 70px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.contenidoPrincipal-produtos-link {
+		flex: 1 1 calc(16.666% - 10px);
+	}
+}

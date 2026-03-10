@@ -1,0 +1,137 @@
+.head{
+    color: aliceblue;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #0b0606;
+    padding: 0.75rem 1rem;
+    background-color:rgb(8, 21, 22);
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.head__logo{
+    height: 60px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.head__nav{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 0;
+}
+
+.head__nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.head__link{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1rem;
+    color: aliceblue;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.head__link a{
+    padding: 0.5rem 0;
+    display: block;
+}
+
+.head__link:hover{
+    color: #812121;
+}
+
+@media screen and (max-width: 900px) {
+    .head__nav ul {
+        gap: 1rem;
+    }
+    .head__link {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .head {
+        padding: 0.75rem 1rem;
+        gap: 0.75rem;
+    }
+    .head__logo {
+        height: 50px;
+    }
+    .head__nav {
+        width: auto;
+        justify-content: flex-end;
+    }
+    .head__nav ul {
+        gap: 0.75rem;
+        justify-content: flex-end;
+    }
+    .head__link {
+        font-size: 0.85rem;
+    }
+    .head__link a {
+        padding: 0.4rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .head {
+        padding: 0.75rem 0.75rem;
+        flex-wrap: wrap;
+    }
+    .head__logo {
+        height: 45px;
+        order: 1;
+        flex: 0;
+    }
+    .head__nav {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    .head__nav ul {
+        gap: 0.5rem;
+        justify-content: center;
+        width: 100%;
+    }
+    .head__link {
+        font-size: 0.8rem;
+    }
+    .head__link a {
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .head {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    .head__logo {
+        height: 40px;
+    }
+    .head__nav {
+        width: 100%;
+    }
+    .head__nav ul {
+        gap: 0.4rem;
+        font-size: 0.75rem;
+    }
+    .head__link {
+        font-size: 0.75rem;
+    }
+    .head__link a {
+        padding: 0.3rem 0.5rem;
+    }
+}
