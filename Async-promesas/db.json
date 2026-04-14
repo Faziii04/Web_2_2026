@@ -1,0 +1,33 @@
+{
+  "perfil": [
+    {
+      "nombre": "FULANITO",
+      "email": "fulanito@univalle.com",
+      "id": 1
+    },
+    {
+      "id": 1776176083645,
+      "nombre": "fwe",
+      "email": "fwe"
+    },
+    {
+      "id": 1776176258494,
+      "nombre": "fewf",
+      "email": "fwefwf"
+    }
+  ],
+  "pets": [
+    {
+      "nombre": "Perrito",
+      "raza": "Labrador",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "nombre": "Producto 1",
+      "precio": 10.99,
+      "id": 1
+    }
+  ]
+}
