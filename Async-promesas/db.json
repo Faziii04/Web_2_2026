@@ -3,31 +3,46 @@
     {
       "nombre": "FULANITO",
       "email": "fulanito@univalle.com",
-      "id": 1
+      "id": "1"
     },
     {
-      "id": 1776176083645,
+      "id": "1776176083645",
       "nombre": "fwe",
       "email": "fwe"
     },
     {
-      "id": 1776176258494,
+      "id": "1776176258494",
       "nombre": "fewf",
       "email": "fwefwf"
+    },
+    {
+      "id": "D986QM1DA54",
+      "nombre": "few",
+      "email": "wfe"
     }
   ],
   "pets": [
     {
       "nombre": "Perrito",
       "raza": "Labrador",
-      "id": 1
+      "id": "1"
+    },
+    {
+      "id": "lIBq6be_Dcc",
+      "nombre": "fwef",
+      "especie": "fwefew",
+      "raza": "fwefw",
+      "edad": 3,
+      "notas": "fewf",
+      "clienteId": "1"
     }
   ],
   "products": [
     {
       "nombre": "Producto 1",
       "precio": 10.99,
-      "id": 1
+      "id": "1"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
