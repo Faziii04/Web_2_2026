@@ -15,12 +15,12 @@ form.addEventListener('submit', async (event) => {
     const email = emailInput.value;
     const user = { 
         id: Date.now(),
-        nombre: name,
+        name: name,
         email: email,
     };
 
     try {
-        await ClientService.createClient(user);
+        await ClientService.crearCliente(user);
         
         window.location.href = "../screens/lista_cliente.html";
     } catch (error) {

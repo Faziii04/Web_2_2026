@@ -3,10 +3,10 @@ import ClientService from '../service/client-service.js';
 const displayClients = async () => {
     const table = document.querySelector('[data-table]');
     
-    let clients; 
+    let clients = []; 
 
     try {
-        clients = await ClientService.getClients();
+        clients = await ClientService.listarClientes();
         console.log(clients);   
     }
     catch (error) {
